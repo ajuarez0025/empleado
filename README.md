@@ -1,4 +1,4 @@
-# invex-empleado
+# empleado
 Aplicacion para realizar operaciones crud de empleados
 
 # swagger
