@@ -1,0 +1,14 @@
+version: "3.8"
+services: 
+  mysql_server:
+    container_name: mysql_server
+    image: mysql:8.0
+    restart: on-failure
+    environment:
+      - MYSQL_ROOT_PASSWORD=test123
+      - MYSQL_DATABASE=invex_db
+    volumes:
+      - ./scripts/:/docker-entrypoint-initdb.d/
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
