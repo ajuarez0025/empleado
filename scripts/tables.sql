@@ -1,4 +1,4 @@
-USE invex_db;
+USE my_db;
 
 CREATE TABLE IF NOT EXISTS empleados (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
