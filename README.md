@@ -6,6 +6,21 @@ http://localhost:8888/swagger-ui/index.html#/
 
 # guardar
 curl -X 'POST' \
+  'http://localhost:8888/api/empleados' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "primerNombre": "test",
+  "segundoNombre": "test",
+  "apellidoPaterno": "test",
+  "apellidoMaterno": "test",
+  "edad": 50,
+  "sexo": "M",
+  "fechaNacimiento": "25-12-1960",
+  "puesto": "desarrollador"
+}'
+
+curl -X 'POST' \
   'http://localhost:8888/api/empleados/saveAll' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
